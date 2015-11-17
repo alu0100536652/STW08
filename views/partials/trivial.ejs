@@ -1,0 +1,39 @@
+<div class="container form">
+    <h5><b>Pregunta de <%= type %></b></h5>
+    <div class="row">
+        <div class="one-half column">
+            <form name="form" action="/trivial" method="post">
+                <h5><b><%= question %></b></h5>
+                <input class="buttonResponse" name="id" type="text" value="<%= id %>" style="display:none"><br>
+                <input class="buttonResponse" name="response" type="submit" value="<%= response1 %>"><br>
+                <input class="buttonResponse" name="response" type="submit" value="<%= response2 %>"><br>
+                <input class="buttonResponse" name="response" type="submit" value="<%= response3 %>"><br>
+                <input class="buttonResponse" name="response" type="submit" value="<%= response4 %>"><br>
+                <input id="points" class="buttonResponse" name="time" type="text"style="display:none"><br>
+            </form>
+        </div>
+        <div class="one-half column">
+            <h5><b>Segundos</b></h5>
+            <div class="countdown">
+                <span name="result" id="countdown"></span>
+            </div>
+            <script>
+                var timer = document.getElementById('countdown');
+                var points = document.getElementById('points');
+                var counter = 30;
+                timer.innerHTML = "30";
+
+                setInterval(function() {
+                    counter--;
+                    if(counter >= 0)
+                    {
+                        timer.innerHTML =  counter.toString();
+                        points.value = counter.toString();
+                    }
+                    else
+                        document.form.submit();
+                }, 1000);
+            </script>
+        </div>
+    </div>
+</div>

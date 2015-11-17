@@ -1,0 +1,11 @@
+<div class="container">
+    <h5><b>Pregunta de <%= type %></b></h5>
+    <form name="form" action="/questions/<%= id %>" method="post">
+        <h5><b><%= question %></b></h5>
+        <input class="buttonResponse" name="id" type="text" value="<%= id %>" style="display:none"><br>
+        <input class="buttonResponse" name="response" type="submit" value="<%= response1 %>"><br>
+        <input class="buttonResponse" name="response" type="submit" value="<%= response2 %>"><br>
+        <input class="buttonResponse" name="response" type="submit" value="<%= response3 %>"><br>
+        <input class="buttonResponse" name="response" type="submit" value="<%= response4 %>"><br>
+    </form>
+</div>

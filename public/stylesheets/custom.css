@@ -1,0 +1,68 @@
+header {
+  height: 50px;
+  margin-bottom: 5%;
+  background-color:#f58733;
+}
+
+.logo img {
+  margin-top:10px;
+  width: 30px;
+  height: 30px;
+}
+
+.logo a {
+  color: #FFF;
+  text-transform: uppercase;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: .2rem;
+	line-height: 5rem;
+	text-align: right;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  margin-right: 20px;
+  color: #FFF;
+  text-transform: uppercase;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: .2rem;
+	line-height: 5rem;
+	text-align: right;
+}
+
+nav a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+.buttonResponse {
+  width: 100%;
+}
+
+input[type="submit"]:hover{
+  color: #FFF;
+  background-color: #fa2d59;
+}
+
+.countdown {
+  color: #fa2d59;
+  font-size: 60px;
+  font-weight: bold;
+  width:100%;
+}
+
+.form {
+  text-align: center;
+}
+
+.result {
+  color: #fa2d59;
+  font-weight: bold;
+}
