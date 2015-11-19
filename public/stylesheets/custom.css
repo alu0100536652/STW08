@@ -1,13 +1,15 @@
+body {
+    text-align: center;
+}
+
 header {
   height: 50px;
-  margin-bottom: 5%;
+  margin-bottom: 9%;
   background-color:#f58733;
 }
 
-.logo img {
-  margin-top:10px;
-  width: 30px;
-  height: 30px;
+.logo {
+  text-align: left;
 }
 
 .logo a {
@@ -18,7 +20,6 @@ header {
 	font-weight: 600;
 	letter-spacing: .2rem;
 	line-height: 5rem;
-	text-align: right;
 }
 
 nav {
@@ -65,4 +66,24 @@ input[type="submit"]:hover{
 .result {
   color: #fa2d59;
   font-weight: bold;
+}
+
+@media (max-width: 550px) {
+  body {
+    text-align: center;
+    -moz-text-align-last: justify;
+    text-align-last: justify;
+  }
+  .nav {
+    display:none;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo a{
+	  font-weight: bold;
+	  font-size: 13px;
+  }
 }
