@@ -1,4 +1,4 @@
-# Práctica 7 STW
+# Práctica 8 STW
 
 ## Aplicación web Express Cuestionarios Online
 
@@ -8,12 +8,12 @@ Esta práctica pertenece a la asignatura Sistemas y Tecnologias Web del grado de
 
 **Repositorio GitHuB**
 
-* [Repositorio](https://github.com/alu0100536652/STW07)
+* [Repositorio](https://github.com/alu0100536652/STW08)
 
 **Página del autor**
 
 * [Web Author](http://alu0100536652.github.io)
 
-**Página de la práctica en el servidor iaas.ull.es**
+**Página de la práctica en Heroku**
 
-* [Web](http://10.6.128.90:8080)
+* [Web](http://trivialexpress.herokuapp.com/)
