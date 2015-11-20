@@ -12,15 +12,16 @@ exports.questionsList = function(req, res, next) {
 exports.question = function(req, res, next) {
     var id = req.params.id,
     allQuestions = new QuizModule.QuizCollectionQuestions()
-    res.render('partials/quiz',{id: allQuestions[id]['id'],question: allQuestions[id]['question'].getQuestion()})
+    console.log(allQuestions[id]['question'].constructor.name)
+    res.render('partials/quiz',{id: allQuestions[id]['id'],question: allQuestions[id]['question'].getQuestion(), type: allQuestions[id]['question'].constructor.name})
 }
 
 exports.questionCheck = function(req, res, next) {
     var id = req.params.id,
     allQuestions = new QuizModule.QuizCollectionQuestions(),
     resultValue
-    console.log(allQuestions[id]['answer'])
-    if (allQuestions[id]['answer'])
+    var funcion = allQuestions[id]['answer']
+    if (funcion(req.body.answ))
         resultValue = "Correcto"
     else
         resultValue = "Incorrecto"

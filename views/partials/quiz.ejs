@@ -1,7 +1,12 @@
 <div class="container">
     <form name="form" action="/quiz/<%= id %>" method="post">
         <h5><b><%= question %></b></h5>
-        <input name="id" type="text"><br>
+        <%if (type == 'ShortQuestion') { %>
+            <input id="answ" name="answ" type="text"><br>
+        <% } else {%>
+            <textarea id="answ" name="answ" type="text"></textarea><br>
+            <input class="button-primary" type="submit" value="Comprobar">
+        <% }%>
     </form>
     <p><a class="button button-primary" href="/quiz">Volver al listado</a></p>
 </div>

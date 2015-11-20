@@ -32,19 +32,25 @@
     
     function Answer(valueAnswer) {
         this.value = valueAnswer
+        console.log(typeof valueAnswer)
         switch(typeof valueAnswer) {
             case 'string':
                 return function(x) {
-                    return this.value === x
+                    return (valueAnswer == x)
                 }
                 break;
-            case 'RegExp':
+            case 'number':
                 return function(x) {
-                    return this.value.exec(x)
+                    return (valueAnswer == x)
+                }
+                break;
+            case 'object':
+                return function(x) {
+                    return valueAnswer.exec(x)
                 }
                 break;
             default:
-                return this.value;
+                    return this.value
         }
     }
     
