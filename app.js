@@ -8,6 +8,7 @@ var express = require('express'),
     routes = require('./routes/index'),
     routesTrivial = require('./routes/trivial'),
     routesQuestion = require('./routes/question'),
+    routesQuiz = require('./routes/quiz'),
     routesAbout = require('./routes/about');
 
 //Statics Files
@@ -28,6 +29,7 @@ app.use(cookieParser());
 app.use('/', routes);
 app.use('/trivial', routesTrivial);
 app.use('/questions', routesQuestion);
+app.use('/quiz', routesQuiz);
 app.use('/about', routesAbout);
 
 
